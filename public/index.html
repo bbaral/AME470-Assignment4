@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple RSS Feed Reader</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RSSFEED READER</title>
     <script src="scripts/jquery-2.2.1.min.js"></script>
     <script src="scripts/jquery.reject.js"></script>
     <script src="scripts/Ply.js"></script>
@@ -12,6 +13,10 @@
     <script src="scripts/script.js"></script>
     <script src="uaSpoofing.js"></script>
     <script src="md5.js"></script>
+    <link rel="stylesheet" href="css/ply.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.reject.css" type="text/css" />
+    <link rel="stylesheet" href="css/offline-theme-default.css" type="text/css" />
+    <link rel="stylesheet" href="css/offline-language-english.css" type="text/css" />
 
     <script>
         var run = function(){
@@ -50,6 +55,18 @@
                 paragraph2: "For the best possible experience, we recommend using the latest version of one of the options below.",
                 display: ["chrome", "firefox", "safari", "msie"]
             });
+        }
+
+        var AI = {
+            show: function(){
+                var mu = "<div class='acInd fadeBox'>"+
+                        '<div class="theSpinner"> </div>' +
+                        "</div>";
+                document.body.innerHTML += mu;
+            },
+            hide:function(){
+                $(".acInd").remove();
+            }
         }
     
         var showLogin = function() {
@@ -422,12 +439,7 @@
             }
         }
     </script>
-    
-    <link rel="stylesheet" href="css/ply.css" type="text/css" />
-    <link rel="stylesheet" href="css/jquery.reject.css" type="text/css" />
-    <link rel="stylesheet" href="css/offline-theme-default.css" type="text/css" />
-    <link rel="stylesheet" href="css/offline-language-english.css" type="text/css" />
-    
+
     <style>
         html, body {
             height: 100%;
@@ -455,8 +467,8 @@
             vertical-align: middle;
             height: 100%;
             font-size: 24px;
-            background-color: #0F97C7;
-            color: #094744;
+            background-color: #295e68;
+            color: #fbffce;
             border-radius: 0.2em;
         }
 
@@ -481,10 +493,10 @@
             height: 75%;
             padding: 20px;
             overflow: auto;
-            background-color: #1AC7BC;
+            background-color: rgba(204, 205, 200, 0.9);
             border: 1px solid;
             border-radius: 5px;
-            border-color: #D0D0D0;
+            border-color: #d0cfa7;
         }
 
         .centeredButton {
@@ -544,8 +556,8 @@
             padding: 15px;
             border: 1px solid;
             border-radius: 5px;
-            border-color: #D0D0D0;
-            background-color: #044744;
+            border-color: #fcfffe;
+            background-color: #003741;
         }
 
         #username {
