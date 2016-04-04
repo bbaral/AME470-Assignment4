@@ -1,0 +1,196 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #F0F0F0;
+    font-family: "helvetica";
+    font-size: 12px;
+    text-align: center;
+}
+.bigScreen #myFeedWrapper, .bigScreen #currFeedWrapper{
+    width: 25%;
+}
+.smallScreen #myFeedWrapper, .smallScreen #currFeedWrapper{
+    width: 100%;
+
+}
+.smallScreen #selFeedWrapper{
+    width: 100%;
+
+}
+h1 {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 24px;
+    background-color: #295e68;
+    color: #fbffce;
+    border-radius: 0.2em;
+}
+
+ol {
+    padding-left: 20px;
+    text-align: left;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.header {
+    display: table;
+    height: 15%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content {
+    height: 75%;
+    padding: 20px;
+    overflow: auto;
+    background-color: rgba(204, 205, 200, 0.9);
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #d0cfa7;
+}
+
+.centeredButton {
+    text-align: center;
+}
+/*********************This style is for back button*****************************************/
+.backButton {
+    border: 0px solid #94ff08;
+    background: #3e9c3e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#65d6b0), to(#3e9c3e));
+    background: -webkit-linear-gradient(top, #65d6b0, #3e9c3e);
+    background: -moz-linear-gradient(top, #65d6b0, #3e9c3e);
+    background: -ms-linear-gradient(top, #65d6b0, #3e9c3e);
+    background: -o-linear-gradient(top, #65d6b0, #3e9c3e);
+    background-image: -ms-linear-gradient(top, #65d6b0 0%, #3e9c3e 100%);
+    padding: 4px 8px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #7fbd8d 0 1px 0;
+    color: #000000;
+    font-size: 9px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.backButton:hover {
+    border: 0px solid #a33434;
+    text-shadow: #a30c0c 0 1px 0;
+    background: #8a2323;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5c11bd), to(#8a2323));
+    background: -webkit-linear-gradient(top, #5c11bd, #8a2323);
+    background: -moz-linear-gradient(top, #5c11bd, #8a2323);
+    background: -ms-linear-gradient(top, #5c11bd, #8a2323);
+    background: -o-linear-gradient(top, #5c11bd, #8a2323);
+    background-image: -ms-linear-gradient(top, #5c11bd 0%, #8a2323 100%);
+    color: #fff;
+}
+.backButton:active {
+    text-shadow: #c22532 0 1px 0;
+    border: 0px solid #e619ce;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d637d1), to(#8a2323));
+    background: -webkit-linear-gradient(top, #d637d1, #65a9d7);
+    background: -moz-linear-gradient(top, #d637d1, #65a9d7);
+    background: -ms-linear-gradient(top, #d637d1, #65a9d7);
+    background: -o-linear-gradient(top, #d637d1, #65a9d7);
+    background-image: -ms-linear-gradient(top, #d637d1 0%, #65a9d7 100%);
+    color: #fff;
+}
+
+/*******************************************************************************************/
+
+.button {
+    border: 0px solid #4191bf;
+    background: #3e779d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7fa4bd), to(#3e779d));
+    background: -webkit-linear-gradient(top, #7fa4bd, #3e779d);
+    background: -moz-linear-gradient(top, #7fa4bd, #3e779d);
+    background: -ms-linear-gradient(top, #7fa4bd, #3e779d);
+    background: -o-linear-gradient(top, #7fa4bd, #3e779d);
+    background-image: -ms-linear-gradient(top, #7fa4bd 0%, #3e779d 100%);
+    padding: 8px 16px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+    text-shadow: #56829e 0 1px 0;
+    color: #d7dce0;
+    font-size: 14px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.button:hover {
+    border: 0px solid #943838;
+    text-shadow: #c42d2d 0 1px 0;
+    background: #bdb0b0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#755164), to(#bdb0b0));
+    background: -webkit-linear-gradient(top, #755164, #bdb0b0);
+    background: -moz-linear-gradient(top, #755164, #bdb0b0);
+    background: -ms-linear-gradient(top, #755164, #bdb0b0);
+    background: -o-linear-gradient(top, #755164, #bdb0b0);
+    background-image: -ms-linear-gradient(top, #755164 0%, #bdb0b0 100%);
+    color: #ff0808;
+}
+.button:active {
+    text-shadow: #873e87 0 1px 0;
+    border: 0px solid #9d64a6;
+    background: #22de11;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0505), to(#bdb0b0));
+    background: -webkit-linear-gradient(top, #ff0505, #22de11);
+    background: -moz-linear-gradient(top, #ff0505, #22de11);
+    background: -ms-linear-gradient(top, #ff0505, #22de11);
+    background: -o-linear-gradient(top, #ff0505, #22de11);
+    background-image: -ms-linear-gradient(top, #ff0505 0%, #22de11 100%);
+    color: #ff00ff;
+}
+/*******************************************************************************************/
+.bigScreen .backButton{
+    display: none;
+}
+#loginBar {
+    height: 15px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #fcfffe;
+    background-color: #003741;
+}
+
+#username {
+    float: right;
+    padding-right: 10px;
+    color: white;
+}
+
+#myFeedWrapper, #currFeedWrapper {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 25%;
+    margin-right: 15px;
+    border-color: #D0D0D0;
+    margin-top:10px;
+}
+
+#selFeedWrapper {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 45%;
+    margin-top:10px;
+}
