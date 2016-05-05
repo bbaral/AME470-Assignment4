@@ -228,7 +228,7 @@
                     document.getElementById("lastUpdated").style.visibility = "hidden";
                 }
                 else {
-                    var markUp = "<ol>"; //each feed will be a list item
+                    var markUp = "<ul>"; //each feed will be a list item
 
                     for (var i = 0; i < mySubs.length; i++) {
                         var mySub = mySubs[i];
@@ -236,7 +236,7 @@
                         markUp += "<li><a href='javascript:openSub(" + i + ")' class='listItem'>" + mySub.id + "</a></li>";
                     }
 
-                    markUp += "</ol>";
+                    markUp += "</ul>";
 
                     document.getElementById("myFeedList").innerHTML = markUp;
                     if(ENV.screen.small){
